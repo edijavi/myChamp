@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="AnchorPane" fx:id="borderPane" prefHeight="600.0" prefWidth="800.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mychamp.gui.controller.RootLayoutController">
+    <stylesheets>
+        <URL value="@DarkTheme.css" />
+    </stylesheets>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Teams">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowTeamManagement" text="Teams Management" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowScoreStatistics" text="Team Overview" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Groups">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowGroupOverview" text="Group Overview" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Schedule">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowTeamSchedule" text="Team Schedule" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowGroupSchedule" text="Group Rounds" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowFinalSchedule" text="Finals Rounds" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

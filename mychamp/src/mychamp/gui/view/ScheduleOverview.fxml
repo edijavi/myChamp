@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mychamp.gui.controller.ScheduleOverviewController">
+    <stylesheets>
+        <URL value="@DarkTheme.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="tableViewScheduleOverview" layoutX="13.0" layoutY="60.0" prefHeight="267.0" prefWidth="584.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+            <columns>
+            </columns>
+        </TableView>
+         <ChoiceBox fx:id="choiceBoxSchedule" layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="114.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button layoutX="165.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleSetMatchResut" text="Set Match Result" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="30.0" />
+    </children>
+</AnchorPane>

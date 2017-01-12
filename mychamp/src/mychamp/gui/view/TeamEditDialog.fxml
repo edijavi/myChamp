@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mychamp.gui.controller.TeamEditDialogController">
+    <stylesheets>
+        <URL value="@DarkTheme.css" />
+    </stylesheets>
+    <children>
+      <HBox layoutX="74.0" layoutY="51.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+              <Label layoutX="74.0" layoutY="55.0" text="Name">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+              <TextField fx:id="txtFieldName" layoutX="124.0" layoutY="51.0" prefHeight="25.0" prefWidth="245.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="309.0" layoutY="258.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+              <Button layoutX="309.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleOk" text="Save">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+              <Button layoutX="377.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
