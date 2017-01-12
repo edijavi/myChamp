@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<AnchorPane fx:id="anchorPane" id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mychamp.gui.controller.ScoreStatisticsController">
+    <stylesheets>
+        <URL value="@DarkTheme.css"/>
+    </stylesheets>
+    <BarChart fx:id="barChart" layoutX="-257.0" layoutY="-68.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis >
+            <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </BarChart>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mychamp.gui.controller.GroupOverviewController">
+    <stylesheets>
+        <URL value="@DarkTheme.css" />
+    </stylesheets>
+    <children>
+      <Pane layoutX="50.0" layoutY="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <VBox layoutX="10.0" layoutY="32.0" AnchorPane.leftAnchor="50.0">
+               <children>
+                    <Label layoutX="36.0" layoutY="173.0" text="Teams" />
+                    <Label fx:id="labelTeamsNumber" layoutX="36.0" layoutY="200.0" text="0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+              <Button fx:id="buttonCreateGroupsAndSchedule" mnemonicParsing="false" onAction="#handleCreateGroupsAndSchedule" text="Create" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0" />
+         </children>
+      </Pane>
+        <TableView fx:id="tableViewGroupsOverview" layoutX="153.0" layoutY="30.0" prefHeight="450.0" prefWidth="300.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+            <columns>
+            </columns>
+        </TableView>
+        <ChoiceBox fx:id="choiceBoxGroups" layoutX="14.0" layoutY="10.0" prefWidth="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+    </children>           
+</AnchorPane>
