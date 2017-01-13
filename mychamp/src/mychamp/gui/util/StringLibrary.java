@@ -31,7 +31,7 @@ public abstract class StringLibrary
     public static final String MATCH_IDNOTFOUND = "Match with this ID does not exists.";
     public static final String ERROR_INPUT = "INPUT ERROR";
     public static final String ERROR_INPUT_SCORE = "Not valid score format!";
-    public static final String ERROR_INPUT_TEAMNAME = "Not valid Team name format! Team name must be unique in application.";
+    public static final String ERROR_INPUT_TEAMNAME = "Not valid Team name format!";
     public static final String TEAMS_DIALOG = "Please select a team in the table.";
     public static final String TEAMS_DIALOG_HEADER = "No Team Selected";
     public static final String TEAMS_DIALOG_TITLE = "No Selection";

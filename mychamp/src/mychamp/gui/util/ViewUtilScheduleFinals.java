@@ -29,7 +29,6 @@ public class ViewUtilScheduleFinals extends ViewUtilSchedule
 
     /**
      * Shows the team overview inside the root layout.
-     * @param obsList
      */
     @Override
     public void prepareControllerOverview(FXMLLoader loader, MyChamp mainApp, ObservableList<String> obsList)

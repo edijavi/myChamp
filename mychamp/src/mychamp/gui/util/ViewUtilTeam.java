@@ -51,7 +51,6 @@ public class ViewUtilTeam extends ViewUtil
         TeamEditDialogController controller = loader.getController();
         controller.setDialogStage(dialogStage);
         ((TeamEditDialogController) controller).setTeam((Team) team);
-        controller.setMainApp(mainApp);
         return controller;
     }
 

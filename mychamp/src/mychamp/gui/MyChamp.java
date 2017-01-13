@@ -11,7 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import mychamp.bll.Team;
 import mychamp.gui.controller.RootLayoutController;
 import mychamp.model.MatchModel;
 import mychamp.model.TeamModel;
@@ -39,7 +38,7 @@ public class MyChamp extends Application
         matchModel = new MatchModel();
 
         // FOR TESTING PURPOSES ONLY!!
-      
+        /*
         teamModel.addTeam(new Team("Team Jedna"));
         teamModel.addTeam(new Team("Team Dva"));
         teamModel.addTeam(new Team("Team Tri"));
@@ -52,7 +51,7 @@ public class MyChamp extends Application
         teamModel.addTeam(new Team("Team Deset"));
         teamModel.addTeam(new Team("Team Jedenact"));
         teamModel.addTeam(new Team("Team Dvanact"));
-   /*     teamModel.addTeam(new Team("Team Trinact"));
+        teamModel.addTeam(new Team("Team Trinact"));
         teamModel.addTeam(new Team("Team Ctrnact"));
         teamModel.addTeam(new Team("Team Patnact"));
          */

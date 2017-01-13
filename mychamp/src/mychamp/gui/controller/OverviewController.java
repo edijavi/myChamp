@@ -76,7 +76,7 @@ public abstract class OverviewController extends Controller
         }
     }
 
-// showing alert for 
+// showing alert for user
     protected void showAlert(String title, String header, String content)
     {
         Alert alert = new Alert(Alert.AlertType.WARNING);

@@ -64,24 +64,6 @@ public class TeamModel
     }
 
     /**
-     * return true if there is team with same name
-     *
-     * @param name
-     * @return
-     */
-    public boolean containsTeamByName(String name)
-    {
-        for (Team team : teams)
-        {
-            if (team.getName().equals(name))
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    /**
      * Array of string containing name of every team
      *
      * @return

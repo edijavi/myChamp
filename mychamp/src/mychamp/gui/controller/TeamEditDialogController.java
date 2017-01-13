@@ -53,7 +53,7 @@ public class TeamEditDialogController extends EditDialogController
      */
     private boolean isInputValid()
     {
-        if (txtFieldName.getText() == null || txtFieldName.getText().trim().length() == 0 || mainApp.getTeamModel().containsTeamByName(txtFieldName.getText().trim()))
+        if (txtFieldName.getText() == null || txtFieldName.getText().trim().length() == 0)
         {
             showAlert(StringLibrary.ERROR, StringLibrary.ERROR_INPUT, StringLibrary.ERROR_INPUT_TEAMNAME);
             return false;
